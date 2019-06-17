@@ -1,0 +1,171 @@
+###
+POST http://localhost:8080/api/management/register
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "123456",
+  "phone": "13467985226"
+}
+
+###
+
+###
+POST http://localhost:8080/api/management/login
+Content-Type: application/json
+
+{
+  "username": "manager3",
+  "password": "123456"
+}
+
+###
+GET http://localhost:8080/api/management/changeRight/4
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+GET http://localhost:8080/api/management/ManagerIndex/4
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+
+###
+
+###
+DELETE http://localhost:8080/api/management/manage/delete/5
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+
+###
+
+###
+PATCH http://localhost:8080/api/management/manage/update
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+{
+  "id": "4",
+  "username": "user11",
+  "password": "1234561",
+  "phone": "15487481123",
+  "BasicInformation": "lalalala"
+}
+###
+
+###
+POST http://localhost:8080/api/management/invigilate/insert
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+{
+  "course": "math",
+  "adate": "2019-06-01T08:00:00",
+  "bdate": "2019-06-01T10:00:00",
+  "date": "2019-06-01"
+}
+
+
+###
+
+
+###
+GET http://localhost:8080/api/management/invigilate
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+DELETE http://localhost:8080/api/management/invigilate/delete/3
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+PATCH http://localhost:8080/api/management/invigilate/update
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+{
+  "id": "4",
+  "course": "history",
+  "adate": "2019-06-01T08:00:00",
+  "bdate": "2019-06-01T10:00:00",
+  "date": "2019-06-01"
+}
+
+###
+
+###
+POST http://localhost:8080/api/management/MUManage/insert
+Content-Type: application/json
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+{
+  "address": {
+    "id": "1",
+    "name": "901"
+  },
+  "user": {
+    "id": "4",
+    "username": "user11",
+    "password": "1234561",
+    "phone": "15487481123",
+    "BasicInformation": "lalalala"
+  },
+  "monitorMess": {
+    "id": "4",
+    "course": "history",
+    "adate": "2019-06-01T08:00:00",
+    "bdate": "2019-06-01T10:00:00",
+    "date": "2019-06-01"
+  }
+}
+
+###
+
+###
+PATCH http://localhost:8080/api/management/taskManage/state/4
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+DELETE http://localhost:8080/api/management/MUManage/delete/1
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+GET http://localhost:8080/api/management/MUManage/checkByM/1
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+GET http://localhost:8080/api/management/taskManage
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+
+###
+
+###
+POST http://localhost:8080/api/management/taskManage/insert
+Authorization: 67a950ab4c1b1701d7c38d32e7a031cc7c2b9a780489c9437691ee4f610eadbd
+Content-Type: application/json
+
+{
+  "taskName": "task1",
+  "description": "blahblah",
+  "deadline": "2019-06-18T08:00:00",
+  "isOpen": "true"
+}
+
+###
+
+###
+
+
+###
