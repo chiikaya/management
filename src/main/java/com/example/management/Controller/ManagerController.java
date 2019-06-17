@@ -4,7 +4,6 @@ import com.example.management.Component.EncryptorComponent;
 import com.example.management.Service.*;
 import com.example.management.entity.*;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.validator.constraints.ParameterScriptAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
